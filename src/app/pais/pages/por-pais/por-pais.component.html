@@ -1,0 +1,19 @@
+<h2>Por Pais</h2>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <form (ngSubmit)="buscar()" autocomplete="off">
+            <input type="text" name="termino" placeholder="Buscar Pais..." class="form-control" [(ngModel)]="termino" />
+        </form>
+    </div>
+</div>
+
+<hr>
+<div *ngIf="hayError" class="alert alert-danger">No se encontro nada con el termino {{termino}}</div>
+
+<div *ngIf="paises.length > 0" class="row">
+    <div class="col">
+        <app-pais-tabla></app-pais-tabla>
+    </div>
+</div>
