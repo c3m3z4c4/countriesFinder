@@ -1,4 +1,4 @@
-<h2>Por Capital</h2>
+<h2 class="animate__animated animate__fadeIn">Por Capital</h2>
 <hr>
 
 <div class="row">
@@ -8,9 +8,9 @@
 </div>
 
 <hr>
-<div *ngIf="hayError" class="alert alert-danger">No se encontro nada con el termino {{termino}}</div>
+<div *ngIf="hayError" class="alert alert-danger animate__animated animate__fadeIn">No se encontro nada con el termino {{termino}}</div>
 
-<div *ngIf="paises.length > 0" class="row">
+<div *ngIf="paises.length > 0" class="row animate__animated animate__fadeIn">
     <div class="col">
         <app-pais-tabla [paises]="paises"></app-pais-tabla>
     </div>
